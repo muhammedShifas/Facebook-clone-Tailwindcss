@@ -41,19 +41,44 @@ This project replicates the visual layout of the Facebook homepage, including:
 
 ---
 
-## Project Structure
+## Development Workflow
 
-```
-FacebookUsingTailwind/
-│
-├── index.html
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── screenshots/
-│
-└── README.md
-```
+To keep the project modular and maintainable, each major section of the Facebook homepage is developed in a separate Git branch.
+
+### Branch Structure
+
+| Branch | Component |
+|---------|-----------|
+| `main` | Stable version of the project |
+| `navbar` | Facebook Navigation Bar |
+| `left-sidebar` | Left Navigation Panel |
+| `stories` | Stories Section |
+| `create-post` | Create Post Card |
+| `feed` | News Feed |
+| `right-sidebar` | Sponsored & Contacts Section |
+| `responsive` | Responsive Layout Improvements |
+| `final` | Complete Facebook Homepage Clone |
+
+Each component is implemented, tested, and committed independently before being merged into the `main` branch.
+
+---
+
+## Current Progress
+
+- [x] Repository Created
+- [x] Project Structure Initialized
+- [x] `navbar` branch created
+- [ ] Navigation Bar
+- [ ] Left Sidebar
+- [ ] Stories Section
+- [ ] Create Post
+- [ ] Feed Posts
+- [ ] Right Sidebar
+- [ ] Responsive Design
+- [ ] Final Testing
+- [ ] Merge into `main`
+
+---
 
 ---
 
