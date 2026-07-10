@@ -11,7 +11,8 @@
         *{
             margin: 0;
             padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
     </style>
 
@@ -20,7 +21,7 @@
     <!-- container -->
     <div class="w-screen h-screen bg-[#F3F4F7] flex flex-col">
         <!-- navbar -->
-        <div class="navbar w-[100%] h-[60px] bg-white border-b-[1px] border-[#DCDDE0] shadow-md flex fixed ">
+        <div class="navbar w-[100%] h-[60px] bg-white border-b-[1px] border-[#DCDDE0] shadow-md flex fixed z-50">
             <!-- group1 logo and searchbar-->
             <div class="flex justify-center items-center gap-[10px]">
                 <img src="facebooklogo.PNG" class="w-[40px] h-[40px] rounded-[20px] ml-[20px] cursor-pointer" alt="">
@@ -48,7 +49,7 @@
                 <div class="w-[40px] h-[40px] bg-[#E2E5E9] rounded-[30px] flex items-center justify-center cursor-pointer hover:bg-[#D6D9DD]"><img class="w-[26px] h-[26px]" src="menu.svg" alt=""></div>
                 <div class="w-[40px] h-[40px] bg-[#E2E5E9] rounded-[30px] flex items-center justify-center cursor-pointer hover:bg-[#D6D9DD]"><i class="fa-brands fa-facebook-messenger" style="color: rgb(8, 8, 9);"></i></div>
                 <div class="w-[40px] h-[40px] bg-[#E2E5E9] rounded-[30px] flex items-center justify-center cursor-pointer hover:bg-[#D6D9DD]"><i class="fa-solid fa-bell" style="color: rgb(8, 8, 9);"></i></div>
-                <img src="profile.jpg" class="w-[40px] h-[40px] rounded-[30px] cursor-pointer" alt="">
+                <img src="profile.jpg" class="w-[40px] h-[40px] rounded-[30px] hover:brightness-[0.93] cursor-pointer" alt="">
                 <div class="absolute right-[38px] top-[2px] w-[25px] h-[23px] rounded-[11px] bg-[#DD2434] flex justify-center items-center cursor-pointer"><p class="text-[15px] text-white">12</p></div>
                 <div class="absolute right-[0px] bottom-[8px] w-[16px] h-[16px] border-[2px] border-[#FFFFFF] rounded-[11px] bg-[#E2E5E9] flex justify-center items-center cursor-pointer"><i class="fa-solid fa-angle-down text-[12px]" style="color: rgb(8, 8, 9);"></i></div>
             </div>
@@ -90,7 +91,7 @@
                 </div>
             </div>
             <!-- middle main section -->
-             <div class="w-[670px]  h-[300vh] ml-[400px] mt-[60px]">
+             <div class="w-[670px] bg-blue-600 h-[500vh] ml-[400px] mt-[60px]">
                 <!-- post creation section -->
                  <div class="w-[670px] h-[65px] shadow-md rounded-[12px] bg-white mt-[80px] flex items-center">
                     <img src="profile.jpg" class="w-[40px] h-[40px] rounded-[30px] cursor-pointer ml-[15px]" alt="">
@@ -142,9 +143,144 @@
                             </div>
                         </div>
                 </div>
+            <!-- feed section -->
+             <!-- post1 -->
+              <div class="w-[670px] h-[680px] bg-[#FFFFFF] mt-[15px] rounded-[15px] shadow-md">
+                <!-- header -->
+                <div class="flex items-center justify-between w-[660px] h-[65px] ">
+                    <div class="flex items-center gap-[9px] ml-[12px]">
+                        <div class="w-[42px] h-[42px] rounded-full bg-blue-600 flex items-center justify-center cursor-pointer">
+                            <img src="fabrizio_profile.jpg" alt="" class="w-[37px] h-[37px] rounded-full border-[2px] border-white">
+                        </div>
+                        <div class="">
+                            <div class="w-[150px] h-[20px]  flex items-center"><p class="hover:underline cursor-pointer">Fabrizio Romano</p><img src="verified.png" alt="" class="w-[28px] h-[28px]"> </div>
+                            <div class="w-[150px] h-[20px]  flex items-center gap-[5px]"> <p class="text-[14px] text-[#65686C] hover:underline cursor-pointer">4h</p><p class=" mb-[8px] text-[#65686C]">.</p><img src="earth.png" alt="" class="w-[15px] h-[15px]"> </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-[8px] mb-[5px]">
+                        <div class="w-[35px] h-[35px] rounded-full hover:bg-[#F2F2F2] flex items-center justify-center cursor-pointer"><i class="fa-solid fa-ellipsis text-[#65686C] text-[18px]"></i></div>
+                        <div class="w-[35px] h-[35px] rounded-full hover:bg-[#F2F2F2] flex items-center justify-center mr-[5px] cursor-pointer"><i class="fa-solid fa-x text-[#65686C] text-[20px]"></i></div>
+                    </div>
+                </div>
+                <!-- caption/title -->
+                 <div class="text-[15px] ml-[10px]">
+                    <p>🚨Dani Olmo: “It’s normal that Real Madrid want to destabilize us. We have dominated in Spain</p> 
+                    <p>for two years in a row.” 🏆💥</p>
+                    <p>“We are focused on our… <span class="font-semibold cursor-pointer hover:underline">See more</span></p>
+                 </div>
+                 <!-- posting -->
+                  <div class="mt-[10px]">
+                    <img src="post1.png" alt="">
+                  </div>
+                  <!-- suggestion -->
+                   <div class=" flex text-[#353536] text-[14px] gap-[10px] mt-[8px]">
+                        <div class="flex items-center justify-center gap-[10px] w-[350px] border-[1px] border-[#E6E9EC] h-[35px] ml-[10px] rounded-[20px] hover:bg-[#F2F2F2] cursor-pointer">
+                            <img src="metaai.png" alt="" class="w-[20px] h-[20px]">
+                            <p>What's the significance of Olmo's statement?</p>
+                        </div>
+                        <div class="flex items-center justify-center gap-[10px] w-[220px] border-[1px] border-[#E6E9EC] h-[33px] rounded-[20px] hover:bg-[#F2F2F2] cursor-pointer">
+                            <p>Why is Dani Olmo confident?</p>
+                        </div>
+                        <div class="w-[40px] h-[30px] rounded-[20px] border-[1px] border-[#E6E9EC] flex justify-center items-center hover:bg-[#F2F2F2] cursor-pointer">
+                            <i class="fa-solid fa-ellipsis text-[#65686C] text-[16px]"></i>
+                        </div>
+                   </div>
+                   <!-- bottom post -->
+                    <div class="mt-[8px] text-[#606366] text-[14px] flex">
+                        <div class="flex">
+                            <div class="w-[100px] h-[40px]   hover:bg-[#F2F2F2] rounded-bl-[20px] flex gap-[2px] items-center justify-center cursor-pointer"><img src="like.png" alt="" class="w-[38px] h-[38px]"><p>101.3k</p> </div>
+                             <div class="w-[80px] h-[40px]  hover:bg-[#F2F2F2]  flex gap-[10px] items-center justify-center cursor-pointer"><img src="comment.png" alt="" class="w-[20px] h-[23px]"><p>1.4k</p> </div>
+                              <div class="w-[80px] h-[40px] hover:bg-[#F2F2F2]  flex gap-[2px] items-center justify-center cursor-pointer"><img src="share.png" alt="" class="w-[33px] h-[33px]"><p>189</p> </div>
+                        </div>
+                        <div class="flex items-center mb-[3px]">
+                            <img src="thumbs-upblue.png" alt="" class="w-[18px] h-[18px] rounded-full border-white ml-[360px] cursor-pointer">
+                            <img src="red-like.png" alt="" class="w-[25px] h-[25px] rounded-full -ml-[5px] cursor-pointer">
+                        </div>
+                    </div>
+              </div>
+              <!-- post2  -->
+               <div class="w-[670px] h-[852px] bg-[#FFFFFF] mt-[15px] rounded-[15px] shadow-md">
+                <!-- header -->
+                <div class="flex items-center justify-between w-[660px] h-[65px] ">
+                    <div class="flex items-center gap-[9px] ml-[12px]">
+                        <div class="w-[42px] h-[42px] rounded-full bg-blue-600 flex items-center justify-center cursor-pointer">
+                            <img src="La-liga-new-logo-red.png" alt="" class="w-[37px] h-[37px] rounded-full border-[2px] border-white">
+                        </div>
+                        <div class="">
+                            <div class="w-[250px] h-[20px] flex items-center">
+                                <p class="hover:underline cursor-pointer">Laliga</p>
+                                <img src="verified.png" alt="" class="w-[28px] h-[28px]">
+                                <p class="mb-[8px] -ml-[2px] text-[#0164D1]">.</p>
+                                <p class="ml-[5px] text-[14px] font-semibold text-[#0164D1] cursor-pointer hover:underline">Follow</p>
+                             </div>
+                            <div class="w-[150px] h-[20px]  flex items-center gap-[5px]"> <p class="text-[14px] text-[#65686C] hover:underline cursor-pointer">May 17</p><p class=" mb-[8px] text-[#65686C]">.</p><img src="earth.png" alt="" class="w-[15px] h-[15px]"> </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-[8px] mb-[5px]">
+                        <div class="w-[35px] h-[35px] rounded-full hover:bg-[#F2F2F2] flex items-center justify-center cursor-pointer"><i class="fa-solid fa-ellipsis text-[#65686C] text-[18px]"></i></div>
+                        <div class="w-[35px] h-[35px] rounded-full hover:bg-[#F2F2F2] flex items-center justify-center mr-[5px] cursor-pointer"><i class="fa-solid fa-x text-[#65686C] text-[20px]"></i></div>
+                    </div>
+                </div>
+                <!-- caption/title -->
+                 <div class="text-[15px] ml-[10px]">
+                    <p>Super Garcia</p> 
+                    <p>#L… <span class="font-semibold cursor-pointer hover:underline">See more</span></p>
+                 </div>
+                 <!-- posting -->
+                  <div class="mt-[10px] w-[670] h-[490px] bg-black flex justify-center cursor-pointer">
+                      <video src="post2.mp4" autoplay controls loop muted class="w-[290px] h-[490px] bg-black"></video>
+                  </div>
+                  <!-- suggestion -->
+                   <div class=" flex text-[#353536] text-[14px] gap-[10px] mt-[8px]">
+                        <div class="flex items-center justify-center gap-[10px] w-[350px] border-[1px] border-[#E6E9EC] h-[35px] ml-[10px] rounded-[20px] hover:bg-[#F2F2F2] cursor-pointer">
+                            <img src="metaai.png" alt="" class="w-[20px] h-[20px]">
+                            <p>Who is the best goalkeeper in laliga history?</p>
+                        </div>
+                        <div class="flex items-center justify-center gap-[10px] w-[220px] border-[1px] border-[#E6E9EC] h-[33px] rounded-[20px] hover:bg-[#F2F2F2] cursor-pointer">
+                            <p>who won the golden glove?</p>
+                        </div>
+                        <div class="w-[40px] h-[30px] rounded-[20px] border-[1px] border-[#E6E9EC] flex justify-center items-center hover:bg-[#F2F2F2] cursor-pointer">
+                            <i class="fa-solid fa-ellipsis text-[#65686C] text-[16px]"></i>
+                        </div>
+                   </div>
+
+                    <!--  -->
+                        <div class=" w-[630px] rounded-xl border border-gray-200 p-[16px] mt-[12px] flex flex-col justify-center bg-[#F8F9FB] ml-[20px]">
+                            <!-- Question -->
+                                 <div class=""><p class="text-[16px] text-gray-800 mb-4 leading-7">
+                                        നിങ്ങൾക്ക് ഈ പോസ്റ്റിൽ താൽപ്പര്യമുണ്ടോ?<span class="font-semibold">· Are you interested in this post?</span></p>
+                                    </div> 
+                                    <!-- Buttons -->
+                                    <div class="flex gap-4">
+                                        <button class="flex-1 h-12 bg-gray-100 hover:bg-gray-200 rounded-lg font-semibold text-gray-700 transition">
+                                            താൽപ്പര്യമുണ്ട് · Interested
+                                        </button>
+
+                                        <button class="flex-1 h-12 bg-gray-100 hover:bg-gray-200 rounded-lg font-semibold text-gray-700 transition">
+                                                താൽപ്പര്യമില്ല · Not interested
+                                        </button>
+                                    </div>
+                        </div>
+                        <!--  -->
+
+                   <!-- bottom post -->
+                    <div class="mt-[20px] text-[#606366] text-[14px] flex">
+                        <div class="flex">
+                            <div class="w-[100px] h-[40px]   hover:bg-[#F2F2F2] rounded-bl-[20px] flex gap-[2px] items-center justify-center cursor-pointer"><img src="like.png" alt="" class="w-[38px] h-[38px]"><p>10.6k</p> </div>
+                             <div class="w-[80px] h-[40px]  hover:bg-[#F2F2F2]  flex gap-[10px] items-center justify-center cursor-pointer"><img src="comment.png" alt="" class="w-[20px] h-[23px]"><p>1.2k</p> </div>
+                              <div class="w-[80px] h-[40px] hover:bg-[#F2F2F2]  flex gap-[2px] items-center justify-center cursor-pointer"><img src="share.png" alt="" class="w-[33px] h-[33px]"><p>567</p> </div>
+                        </div>
+                        <div class="flex items-center mb-[3px]">
+                            <img src="thumbs-upblue.png" alt="" class="w-[18px] h-[18px] rounded-full border-white ml-[360px] cursor-pointer">
+                            <img src="red-like.png" alt="" class="w-[25px] h-[25px] rounded-full -ml-[5px] cursor-pointer">
+                        </div>
+                    </div>
+              </div>
 
 
-             </div>
+             
+            
+            </div>
 
         </div>
     </div>
