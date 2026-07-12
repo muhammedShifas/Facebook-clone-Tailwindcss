@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+         .sidebar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <title>Facebook</title>
+    <link rel="icon" href="facebook-og.svg">
+</head>
+<body>
+    <!-- container -->
+    <div class=" w-screen h-[100vh] bg-gradient-to-br from-[#F5EEF1] via-[#DDE8F5] to-[#E9F7F1]">
+
+        <!-- side-bar -->
+        <div class=" side-bar fixed h-[100vh] w-[60px] bg-white flex flex-col items-center overflow-y-auto scroll-hide">
+            <div class="w-[60px] h-[60px] flex justify-center items-center mt-[10px]">
+                <img class="w-[50px] h-[50px] mt-[10px]" src="meta.png" alt="">
+            </div>
+           <div class="flex justify-center items-center mt-[30px] w-[60px] h-fit pr-[5px] relative">
+             <div class="w-[60px] h-fit flex justify-center items-center z-50  cursor-pointer  ">
+                <img class="w-[30px] h-[30px] rounded-[45px]" src="profile.jpg" alt="">
+                <div class="ml-[-15px] mb-[-15px] w-[15px] h-[15px] rounded-[25px] bg-white flex justify-center items-center"><img class="w-[15px] h-[15px] rounded-[20px]" src="facebook-og.svg" alt=""></div>
+            </div>
+            <div class="w-[60px] h-fit flex justify-center items-center absolute top-[-10px] left-[7px]  cursor-pointer ">
+                <img class="w-[30px] h-[30px] rounded-[45px]" src="profile.jpg" alt="">
+                <div class="ml-[-15px] mb-[-15px] w-[15px] h-[15px] rounded-[7px] bg-white flex justify-center items-center"><img class="w-[13px] h-[13px] " src="instagram.png" alt=""></div>
+            </div>
+           </div>
+
+           <div class="w-[60px] h-fit flex flex-col justify-start items-center gap-[5px] mt-[15px]">
+                <div class="home w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA]  flex justify-center items-center">
+                <img src="home-solid.png" alt="">
+            </div>
+            <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center relative">
+                <img class="w-[35px] h-[35px]" src="bell-solid.png" alt="">
+                <div class="w-[8px] h-[8px] rounded-full absolute top-[6px] right-[6px] bg-red-700"></div>
+            </div>
+            <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center">
+                <img class="w-[27px] h-[27px]" src="logo2.png" alt="">
+            </div>
+            <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center relative">
+                <img class="w-[30px] h-[30px]" src="chat.png" alt="">
+                <!-- absolute-postion for red dot -->
+                <div class="w-[8px] h-[8px] rounded-full absolute top-[6px] right-[6px] bg-red-700"></div>
+            </div>
+            <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center">
+                <img class="w-[33px] h-[33px]" src="logo-3.png" alt="">
+            </div>
+            <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center">
+                <img class="w-[22px] h-[22px]" src="calendar.svg" alt="">
+                </div>
+                <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center">
+                <img class="w-[22px] h-[22px]" src="horn.svg" alt="">
+                </div>
+                <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center">
+                <img class="w-[22px] h-[22px]" src="signal.svg" alt="">
+                </div>
+                <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center">
+                <img class="w-[33px] h-[33px]" src="live.png" alt="">
+                </div>
+                <div class="w-[42px] h-[42px] rounded-[8px] bg-[#283943] flex justify-center items-center relative">
+                <div class="flex justify-center items-center w-[27px] h-[21px] rounded-[6px] border-[#20262D] bg-white border-[2px]"><img class="w-[26px] h-[26px] object-cover" src="group-1.png" alt=""></div>
+                <div class="w-[8px] h-[8px] rounded-full absolute top-[7px] right-[6px] bg-red-700"></div>
+                </div>
+                <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center mt-[2px]">
+                <img class="w-[27px] h-[27px] ml-[2px]" src="whatsapp.svg" alt="">
+                </div>
+           </div>
+           <hr class="w-[25px] h-[2px] bg-[#283943] mt-[20px]">
+           <div class="w-[60px] h-fit flex flex-col justify-center items-center mt-[10px]">
+                <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center mt-[2px]">
+                <img class="w-[27px] h-[27px]" src="search.svg" alt="">
+                </div>
+                <div class="w-[40px] h-[40px] rounded-[12px] hover:bg-[#E6E8EA] flex justify-center items-center mt-[4px]">
+                <img class="w-[35px] h-[35px]" src="settings-1.png" alt="">
+                </div>
+                <div class="w-[35px] h-[35px] rounded-full bg-[#F1F4F7] flex justify-center items-center mt-[5px]">
+                <img class="w-[22px] h-[22px]" src="question-mark.svg" alt="">
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
