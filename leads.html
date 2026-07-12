@@ -131,6 +131,137 @@
 
         </div>
     </div>
+   <!-- white section -->
+    <div class="w-[1350px] h-[130px] bg-white rounded-[8px] border-[1px] border-[#E4E6EB] ml-[15px]">
+
+        <!-- top navigation -->
+        <div class="w-[1350px] h-[55px] flex justify-between items-center">
+
+            <!-- left tabs -->
+            <div class="flex items-center ml-[15px] mt-[10px]">
+                <div class="w-[145px] h-[36px] bg-[#E7F3FF] rounded-[6px] flex justify-center items-center gap-[8px] cursor-pointer">
+                    <img src="pipeline.png" alt="" class="w-[40px] h-[40px] -ml-[10px] ">
+                     <p class="text-[#006EBC] text-[15px] font-semibold -ml-[10px]">Pipeline view</p>
+                    
+                </div>
+
+                <div class="w-[120px] h-[36px] rounded-[6px] flex justify-center items-center gap-[8px] ml-[8px] hover:bg-[#F2F2F2] cursor-pointer">
+                    <i class="fa-solid fa-table-list"></i>
+                    <p class="text-[15px]">Table view</p>                    
+                </div>
+
+            </div>
+
+            <!-- hide filters -->
+            <button class="w-[135px] h-[38px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] flex justify-center items-center gap-[8px] mr-[18px] hover:bg-[#F2F2F2] cursor-pointer">
+                <i class="fa-solid fa-sliders"></i>
+                <p class="text-[15px]">Hide filters</p>
+            </button>
+
+        </div>
+            <!-- filter section -->
+        <div class="w-[1330px] h-[60px] flex items-center">
+
+            <!-- add custom stage -->
+            <button class="w-[165px] h-[38px] ml-[18px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center cursor-pointer">
+                <p class="text-[15px] text-[#1C1E21]">Add custom stage</p>
+            </button>
+
+            <!-- divider -->
+            <div class="w-[2px] h-[33px] bg-gray-500 ml-[12px]"></div>
+
+            <!-- bulk edit -->
+            <button class="w-[95px] h-[38px] ml-[12px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center cursor-pointer">
+                <p class="text-[15px] text-[#1C1E21]">Bulk edit</p>
+            </button>
+
+            <!-- add filters -->
+            <button class="w-[220px] h-[38px] ml-[12px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex items-center cursor-pointer">
+
+                <div class="w-[30px] h-[30px] bg-[#E7F3FF] rounded-[5px] ml-[10px] flex justify-center items-center">
+                    <i class="fa-solid fa-plus text-[#6D6E7F] text-[13px]"></i>
+                </div>
+
+                <p class="ml-[12px] text-[15px] text-[#65686C]">
+                    Add filters
+                </p>
+
+            </button>
+
+            <!-- campaign -->
+            <button class="w-[125px] h-[38px] ml-[10px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center gap-[8px] cursor-pointer">
+
+                <p class="text-[15px]">Campaign</p>
+
+                <i class="fa-solid fa-caret-down text-[12px]"></i>
+
+            </button>
+
+            <!-- forms -->
+            <button class="w-[95px] h-[38px] ml-[10px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center gap-[8px] cursor-pointer">
+
+                <p class="text-[15px]">Forms</p>
+
+                <i class="fa-solid fa-caret-down text-[12px]"></i>
+
+            </button>
+
+            <!-- select dates -->
+            <button class="w-[165px] h-[38px] ml-[10px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center gap-[10px] cursor-pointer">
+
+                <i class="fa-regular fa-calendar text-[15px]"></i>
+
+                <p class="text-[15px]">Select dates</p>
+
+                <i class="fa-solid fa-caret-down text-[12px]"></i>
+
+            </button>
+
+            <!-- status -->
+            <button class="w-[110px] h-[38px] ml-[10px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center gap-[8px] cursor-pointer">
+
+                <p class="text-[15px]">Status</p>
+
+                <i class="fa-solid fa-caret-down text-[12px]"></i>
+
+            </button>
+
+            <!-- source -->
+            <button class="w-[110px] h-[38px] ml-[10px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center gap-[8px] cursor-pointer">
+
+                <p class="text-[15px]">Source</p>
+
+                <i class="fa-solid fa-caret-down text-[12px]"></i>
+
+            </button>
+
+            <!-- assigned to -->
+            <button class="w-[140px] h-[38px] ml-[10px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center gap-[8px] cursor-pointer">
+
+                <p class="text-[15px]">Assigned to</p>
+
+                <i class="fa-solid fa-caret-down text-[12px]"></i>
+
+            </button>
+
+            <!-- labels -->
+            <button class="w-[105px] h-[38px] ml-[10px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center gap-[8px] cursor-pointer">
+
+                <p class="text-[15px]">Labels</p>
+
+                <i class="fa-solid fa-caret-down text-[12px]"></i>
+
+            </button>
+
+            <!-- more -->
+            <button class="w-[45px] h-[38px] ml-[10px] bg-white border-[1px] border-[#CED0D4] rounded-[6px] hover:bg-[#F2F2F2] flex justify-center items-center cursor-pointer">
+
+                <i class="fa-solid fa-ellipsis text-[16px]"></i>
+
+            </button>
+
+        </div>
+        </div>
 
     
 </div>
